@@ -1,0 +1,36 @@
+---
+title: "Experience"
+---
+
+# Education
+
+## Columbia University Mailman School of Public Health
+**Master of Public Health, Population and Family Health, Public Health Research Methods**  
+New York, NY  
+Expected May 2027
+
+## Indiana University Bloomington
+**Bachelor's Degree in Kinesiology and Medical Sciences**  
+Bloomington, IN  
+May 2025
+
+# Professional and Research Experience
+
+## Columbia University Mailman School of Public Health
+**Research Associate**
+
+Conduct research focused on artificial intelligence and its use among frontline healthcare workers, including evidence synthesis, qualitative research, and analysis of implementation barriers and opportunities.
+
+## Unity Consortium
+**Outreach and Development Intern**
+
+Supported vaccine education, communications, stakeholder engagement, and development initiatives focused on adolescent and young adult health.
+
+## Columbia University Mailman School of Public Health
+**Research Assistant**
+
+Supported reproductive health research through qualitative coding, development of research materials, analysis, and dissemination.
+
+# Skills
+
+R, RStudio, tidyverse, Git, GitHub, STATA, SAS, SPSS, Excel, Power BI, Qualtrics, qualitative research, quantitative research, and data visualization.

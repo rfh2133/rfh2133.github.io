@@ -1,0 +1,12 @@
+
+---
+title: "About Me"
+---
+
+# Hi, I'm Rezwana!
+
+I am a Master of Public Health student at Columbia University Mailman School of Public Health in the Department of Population and Family Health, pursuing a certificate in Public Health Research Methods. 
+
+My interests include healthcare policy, health equity, healthcare research, and the use of data and emerging technologies to improve health systems.
+
+This website highlights my academic background, professional experience, and data science work.
