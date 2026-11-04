@@ -1,0 +1,100 @@
+---
+title: "NYC Restaurant Inspections Dashboard"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+
+data(rest_inspec)
+```
+Row
+-------------------------------------
+
+### Restaurant Grades
+
+```{r grade_bar}
+grade_data =
+  rest_inspec |>
+  filter(grade %in% c("A", "B", "C")) |>
+  count(grade)
+
+plot_ly(
+  grade_data,
+  x = ~grade,
+  y = ~n,
+  type = "bar"
+) |>
+  layout(
+    xaxis = list(title = "Grade"),
+    yaxis = list(title = "Number of Records")
+  )
+```
+### Inspection Scores
+
+```{r score_boxplot}
+score_data =
+  rest_inspec |>
+  filter(
+    grade %in% c("A", "B", "C"),
+    !is.na(score)
+  )
+
+plot_ly(
+  score_data,
+  x = ~grade,
+  y = ~score,
+  type = "box"
+) |>
+  layout(
+    xaxis = list(title = "Grade"),
+    yaxis = list(title = "Inspection Score")
+  )
+```
+
+Row
+-------------------------------------
+
+### Inspections by Borough
+
+```{r borough_scatter}
+borough_data =
+  rest_inspec |>
+  filter(
+    !is.na(score),
+    !is.na(boro)
+  ) |>
+  group_by(boro) |>
+  summarize(
+    average_score = mean(score, na.rm = TRUE),
+    inspections = n(),
+    .groups = "drop"
+  )
+
+plot_ly(
+  borough_data,
+  x = ~inspections,
+  y = ~average_score,
+  text = ~boro,
+  type = "scatter",
+  mode = "markers",
+  hoverinfo = "text+x+y"
+) |>
+  layout(
+    xaxis = list(title = "Number of Inspection Records"),
+    yaxis = list(title = "Average Inspection Score")
+  )
+```
+
+
