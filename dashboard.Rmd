@@ -34,11 +34,14 @@ plot_ly(
   grade_data,
   x = ~grade,
   y = ~n,
-  type = "bar"
+  type = "bar",
+  color = ~grade,
+  colors = c("#6F8FAF", "#B58DB6", "#D9897E")
 ) |>
   layout(
     xaxis = list(title = "Grade"),
-    yaxis = list(title = "Number of Records")
+    yaxis = list(title = "Number of Records"),
+    showlegend = FALSE
   )
 ```
 ### Inspection Scores
@@ -55,11 +58,14 @@ plot_ly(
   score_data,
   x = ~grade,
   y = ~score,
-  type = "box"
+  type = "box",
+  color = ~grade,
+  colors = c("#6F8FAF", "#B58DB6", "#D9897E")
 ) |>
   layout(
     xaxis = list(title = "Grade"),
-    yaxis = list(title = "Inspection Score")
+    yaxis = list(title = "Inspection Score"),
+    showlegend = FALSE
   )
 ```
 
@@ -69,31 +75,49 @@ Row
 ### Inspections by Borough
 
 ```{r borough_scatter}
-borough_data =
+borough_time =
   rest_inspec |>
   filter(
     !is.na(score),
-    !is.na(boro)
+    !is.na(boro),
+    boro != "0",
+    !is.na(inspection_date)
   ) |>
-  group_by(boro) |>
+  mutate(
+    inspection_date = as.Date(inspection_date),
+    year = lubridate::floor_date(inspection_date, "year")
+  ) |>
+  group_by(year, boro) |>
   summarize(
     average_score = mean(score, na.rm = TRUE),
-    inspections = n(),
     .groups = "drop"
   )
 
 plot_ly(
-  borough_data,
-  x = ~inspections,
+  borough_time,
+  x = ~year,
   y = ~average_score,
-  text = ~boro,
+  color = ~boro,
+  colors = c(
+    "#8B6F9E",
+    "#6F8FAF",
+    "#5F9E91",
+    "#9CAF88",
+    "#D6A85F"
+  ),
   type = "scatter",
-  mode = "markers",
-  hoverinfo = "text+x+y"
+  mode = "lines+markers",
+  hoverinfo = "text",
+  text = ~paste(
+    boro,
+    "<br>Year:", format(year, "%Y"),
+    "<br>Average score:", round(average_score, 1)
+  )
 ) |>
   layout(
-    xaxis = list(title = "Number of Inspection Records"),
-    yaxis = list(title = "Average Inspection Score")
+    xaxis = list(title = "Inspection Date"),
+    yaxis = list(title = "Average Inspection Score"),
+    legend = list(title = list(text = "Borough"))
   )
 ```
 

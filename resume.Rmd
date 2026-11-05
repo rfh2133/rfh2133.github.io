@@ -5,32 +5,57 @@ title: "Experience"
 # Education
 
 ## Columbia University Mailman School of Public Health
-**Master of Public Health, Population and Family Health, Public Health Research Methods**  
-New York, NY  
-Expected May 2027
+**Master of Public Health (MPH), Population & Family Health**  
+**Certificate in Public Health Research Methods**  
+New York, NY | Expected May 2027
 
-## Indiana University Bloomington
-**Bachelor's Degree in Kinesiology and Medical Sciences**  
-Bloomington, IN  
-May 2025
+**Relevant Coursework:** Quantitative Data Analysis, Program Evaluation, Data Science, Research Design & Data Collection
 
-# Professional and Research Experience
+## Indiana University Bloomington, School of Public Health
+**Bachelor of Science, Kinesiology & Medical Sciences**  
+Bloomington, IN | May 2025
+
+# Relevant Experience
 
 ## Columbia University Mailman School of Public Health
-**Research Associate**
+**Research Associate | May 2026 – Present**
 
-Conduct research focused on artificial intelligence and its use among frontline healthcare workers, including evidence synthesis, qualitative research, and analysis of implementation barriers and opportunities.
+- Investigate AI use among frontline healthcare workers in India, synthesizing evidence on adoption and implementation barriers to identify opportunities to improve healthcare delivery efficiency for Antara Foundation; manuscript in preparation for submission to *The Lancet*.
+- Develop executive-ready briefing materials and evidence summaries that translate complex research into strategic insights for senior audiences, including engagements with the UN General Assembly, UNDP, and Exemplars in Global Health.
+- Conduct rapid evidence reviews and translate complex research into presentation-ready insights and recommendations supporting project decisions, partnerships, and stakeholder communications.
 
 ## Unity Consortium
-**Outreach and Development Intern**
+**Outreach & Development Intern | May 2026 – Present**
 
-Supported vaccine education, communications, stakeholder engagement, and development initiatives focused on adolescent and young adult health.
+- Collaborate with pharmaceutical, healthcare, and public health partners on vaccine education initiatives, developing evidence-based strategies to strengthen vaccine awareness and confidence.
+- Synthesize vaccine research, recommendations, and policy developments into audience-specific communications for healthcare professionals, parents, and organizational partners.
 
-## Columbia University Mailman School of Public Health
-**Research Assistant**
+## Columbia University
+**Sid Lerner Women’s and Adolescent Health Fellow | May 2026 – August 2026**
 
-Supported reproductive health research through qualitative coding, development of research materials, analysis, and dissemination.
+- Synthesized qualitative research on menstrual health in U.S. disaster settings and evidence on retail health access in Tanzania, translating findings into practical recommendations for public health stakeholders.
+
+## Columbia University Irving Medical Center
+**Research Assistant | August 2025 – May 2026**
+
+- Analyzed and synthesized qualitative and quantitative findings on reproductive health equity into concise briefs and presentation-ready insights, with findings presented to 12 partner clinics across Sub-Saharan Africa.
+- Organized, coded, and analyzed research data using STATA, translating quantitative outputs into clear, non-technical takeaways to support stakeholder discussions, project planning, and decision-making.
+
+## Indiana University Student Government
+**Vice President | January 2023 – August 2025**
+
+- Led large-scale university programs, managing a $650,000 annual budget and increasing student engagement by 21% across a diverse student body.
+- Coordinated project timelines, logistics, stakeholder communication, and external partnerships across large-scale university initiatives.
+
+## Indiana University Health Hospital
+**Medical Assistant | August 2023 – May 2025**
+
+- Documented patient histories, symptoms, vital signs, and visit information in Epic, maintaining accurate and timely electronic health records to support provider assessment and care planning.
 
 # Skills
 
-R, RStudio, tidyverse, Git, GitHub, STATA, SAS, SPSS, Excel, Power BI, Qualtrics, qualitative research, quantitative research, and data visualization.
+**Research & Analytics:** Quantitative & Qualitative Analysis, Data Interpretation, Evidence Synthesis, Literature Review, Survey Design, Data Visualization
+
+**Tools:** Advanced Excel (Pivot Tables, Lookups, Data Visualization), PowerPoint, Power BI, R, STATA, Qualtrics
+
+**Core Strengths:** Operational Problem Solving, Project Management, Data-Driven Decision Making, Stakeholder Engagement
